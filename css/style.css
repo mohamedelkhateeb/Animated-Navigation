@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:#21c8b2c9;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .85rem;
+    width: 60%;
+    color: black;
+    font-weight: bold;
+}
+
+.dec {
+    width: 120px;
+}
+
+.open{
+    background-color: blue;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size:15px;
+    cursor: pointer;
+}
+.close {
+    background-color: blue;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size:15px;
+    cursor: pointer;
+}
+
+.logo {
+color: white;
+padding-left: 20px;
+font-size :30px;
+}
+
+ul {
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    font-size: 20px;
+}
+
+ul li {
+    padding: 15px;
+}
+
+ul li:hover {
+    cursor: pointer;
+}
+
+
+.remove {
+    display: none;
+}
+
+.active{
+    border: 2px white solid;
+    color: white;
+}
+
+
+.open{
+    display: none;
+}
+
+/* 
+
+-Make It Responsive By Query Selector
+
+*/
+
+@media (max-width: 1200px){
+    .container{
+        flex-direction: column;
+    }
+    .remo{
+        display: none;
+    }
+    .response , .list{
+        flex-direction: column;
+    }
+    .response li , .list li  {
+        width: 100%;
+        padding: 15px;
+        margin: 10px;
+    }
+}
+
